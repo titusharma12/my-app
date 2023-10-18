@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-text{
+  font-size:25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dollar {
+  font-size: 100px;
+  color: green;
+  background-color: rgb(150, 218, 150);
+  border-radius: 50%;
+  padding: 1rem;
+}
+.Notebook {
+  font-size: 100px;
+  color: purple;
+  background-color: rgb(240, 157, 240);
+  border-radius: 50%;
+  padding: 1rem;
+}
+.wallet {
+  font-size: 100px;
+  color: rgb(32, 161, 178);
+  background-color: rgb(169, 223, 241);
+  border-radius: 50%;
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bag {
+  font-size: 100px;
+  color: red;
+  background-color: rgb(219, 155, 155);
+  border-radius: 50%;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text {
+  margin-left: 0.7rem;
+  line-height: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.earning {
+  color: gray;
+  font-size: 14px;
+}
+
+.text-dollar {
+  font-size: 28px;
+  font-weight: bold;
+}
+.month {
+  font-size: 14px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dashboard {
+  margin-top: 1.5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-dashboard {
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-top {
+  background-color: #040440;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #ffffff;
+  align-items: center;
+}
+
+.dashborad2 {
+  border: 1px solid gray;
+  border-radius: 12px;
+  background-color: lightblue;
+}
+
+.sidebar-middle div {
+  padding: 0.7rem 2.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidebar-middle{
+  margin-top: -12rem;
+}
+
+.sidebar-bottom {
+  padding: 0.7rem 2.5rem;
+  border: 1px solid gray;
+  border-radius: 12px;
+  background-color: #2D2D69;
+  margin-bottom: 1rem;
+}
+
+.main {
+  background-color: #F5F6F8;
+  color: #000000;
+}
+
+.main-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 2rem;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #282c34;
+  margin-right: 1rem;
+}
+
+.main-top-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 2px 2px gray;
+  border-radius: 12px;
+  padding: 2rem 0.5rem;
+}
+
+.main-middle {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
+
+.chart-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart {
+  background-color: #ffffff;
+  margin: 2rem;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 2px 2px gray;
+  border-radius: 12px;
+  padding: 1rem;
+}
+.progress {
+  background-color: #ffffff;
+  margin: 2rem;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 2px 2px gray;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.btm-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-box {
+  margin-right: 12rem;
+}
+
+.main-search{
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  border:1px solid #ffff;
+  border-radius: 5px 10px;
+}
+
+.main-search input{
+  padding:0.5rem 1rem;
+  border:none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.main-search input::placeholder{
+  font-size: 16px;
+}
+
+.main-search input:focus {
+  outline: none;
+}
+
+.search-icon{
+  background-color: #ffffff;
+  color:#000000;
+  font-size: 30px;
+  padding:0.3rem;
+  border:none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+
+.main-text{
+  display: flex;
+  align-items: center;
+}
+.wave-icon{
+  margin-left: 0.2rem;
+}
+.dashboard-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-icon-margin{
+  display: flex;
+  align-items: center;
+  margin-right: 0.7rem;
+}
+
+.main-middle,.sidebar-bottom{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
